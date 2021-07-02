@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <style>
+        .contener {
+        text-align: center;
+        color:black;
+        position: absolute;
+        margin: 75px 350px;
+        width: 50%;
+        border: 2px soild goldenrod;
+        font-size: 1.5rem;
+        background-color: white;
+    }
+
+        body{
+            background:rgb(233, 227, 227);
+        }
+        .btn {
+        background-color:blue;
+        font-family: 'Baloo Bhaina 2', cursive;
+        color:  white;
+        height: 40px;
+        width: 200px;
+        margin: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid black;
+    }
+    .btn:hover,
+    .btn:active {
+        color: red;
+        text-decoration: underline;
+    }
+    .sk input {
+        width:350px;
+        display: inline-block;
+        border: 2px solid green;
+        padding: 9px 30px;
+        margin: 10px;
+        border-radius: 13px;
+        font-size: 22px;
+    }
+    .left {
+        position: absolute;
+        top: 20px;
+        left:8px;
+        display: inline-block;
+
+    }
+    .left img {
+        width: 80px;
+        height: 50px;
+        display: inline-block;
+    }
+    header::before{
+        content: " ";
+        position: absolute;
+        color:white;
+        height: 100%;
+        width: 100%;
+        top: 80px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.4;
+        
+    }
+    .ktn {
+        background-color:blue;
+        font-family: 'Baloo Bhaina 2', cursive;
+        color:  white;
+        height: 40px;
+        width: 120px;
+        margin: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: 2px solid green;
+
+    }
+    .ktn:hover,
+    .ktn:active {
+        color: red;
+        text-decoration: underline;
+    }
+    
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 5px;
+        display: inline-block;
+        padding:  10px;
+
+    }
+    .right a{
+        padding:15px;
+    }
+    .navbaar {
+        font-size: 22px;
+        background-color:black;
+        
+    }
+    .navbaar li {
+        display: inline-block;
+        padding: 10px;;
+        color:white;
+    
+    }
+
+    .navbaar li a{
+        position: relative;
+        text-decoration: none;
+        list-style: none;
+        left :60px;
+        
+    }
+    .navbaar ul li a{
+        color:white;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="sk">
+        <span class="left"> <img src="project/nk.jpg" alt=""></span>
+       <div class="navbaar">
+           <ul >
+               <li><a href="#">Post a job</a></li>
+               <li><a href="#">Find resumes</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">Resources</a></li> 
+           </ul>
+          <span class="right">
+              <a style="color:white">Help center ?</a>
+              <button class="ktn" style="color:whit"><a > Sign in</a></button>
+              <a style="color:white">Find job</a>
+          </span>
+       </div>
+    <div class="contener">
+        <h1 >Sign in</h1>
+        Email id:<br><input type="email"><br><br>
+        Password:<br><input type="password"><br><br>
+        <button class="btn"><a> Sign in</a></button>
+        
+    </div>
+</body>
+</html>
